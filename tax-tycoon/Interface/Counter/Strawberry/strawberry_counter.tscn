@@ -1,5 +1,38 @@
 [gd_scene format=3 uid="uid://dekv7me3jck0"]
 
-[ext_resource type="PackedScene" uid="uid://bqcmkfwmbcws0" path="res://Interface/Counter/counter.tscn" id="1_olc0c"]
+[ext_resource type="Texture2D" uid="uid://lk4bwm4jv2wq" path="res://Interface/Counter/Strawberry/Strawberry.png" id="1_p82t1"]
+[ext_resource type="Script" uid="uid://cwo080hlgt2eh" path="res://Interface/Counter/Strawberry/texture_button.gd" id="2_p82t1"]
 
-[node name="Node2D" unique_id=613081882 instance=ExtResource("1_olc0c")]
+[node name="Node2D" type="Node2D" unique_id=613081882]
+
+[node name="Counter" type="NinePatchRect" parent="." unique_id=1269404973]
+offset_left = 192.0
+offset_top = 139.0
+offset_right = 693.0
+offset_bottom = 597.0
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="TextureButton" type="TextureButton" parent="Counter" unique_id=336032626]
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+texture_normal = ExtResource("1_p82t1")
+script = ExtResource("2_p82t1")
+
+[node name="Label" type="Label" parent="Counter/TextureButton" unique_id=290496796]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -191.0
+offset_right = 57.0
+offset_bottom = -54.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 100
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Counter/TextureButton" to="Counter/TextureButton" method="_on_pressed"]
