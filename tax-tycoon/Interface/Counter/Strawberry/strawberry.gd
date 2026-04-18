@@ -1,5 +1,5 @@
 extends Sprite2D
-
+var count = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,3 +9,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func _input(event) -> void:
+	if event is InputEventMouseButton and event.pressed:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			count += 1
+			print("Mouse Button Pressed")
