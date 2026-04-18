@@ -11,7 +11,6 @@ offset_top = 138.0
 offset_right = 717.0
 offset_bottom = 596.0
 size_flags_vertical = 8
-texture = ExtResource("2_wabcd")
 
 [node name="Label" parent="Counter" index="0" unique_id=290496796]
 offset_left = -144.0
@@ -19,8 +18,10 @@ offset_top = -134.0
 offset_right = -87.0
 offset_bottom = 3.0
 
-[node name="Control" type="Control" parent="." index="1" unique_id=1952136154]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="TextureButton" parent="Counter" index="1" unique_id=336032626]
+offset_left = 21.0
+offset_top = 44.0
+offset_right = 1941.0
+offset_bottom = 1964.0
+scale = Vector2(0.348289, 0.33771464)
+texture_normal = ExtResource("2_wabcd")
