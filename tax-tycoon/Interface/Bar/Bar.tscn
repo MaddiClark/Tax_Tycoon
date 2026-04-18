@@ -1,15 +1,19 @@
 [gd_scene format=3 uid="uid://8ldjt88kkn4i"]
 
 [ext_resource type="Texture2D" uid="uid://dk3xem0x72vp5" path="res://Interface/Bar/Time Bar/bar_outline.png" id="1_dpt8x"]
+[ext_resource type="Script" uid="uid://chpsegppil4so" path="res://Interface/Bar/bar.gd" id="1_hgxg1"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hgxg1"]
 load_path = "res://.godot/imported/red-square.png-3ee54db3ee6340a506a0db430f366fda.ctex"
 
 [node name="Bar" type="Node2D" unique_id=271038989]
+scale = Vector2(0.6696367, 0.962248)
+script = ExtResource("1_hgxg1")
 
 [node name="Bar" type="HBoxContainer" parent="." unique_id=1475421846]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 2404.0
+offset_bottom = 2400.0
+scale = Vector2(0.40837604, 0.06596292)
 
 [node name="Count" type="NinePatchRect" parent="Bar" unique_id=1863245975]
 layout_mode = 2
@@ -18,11 +22,12 @@ layout_mode = 2
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = 911.0
-offset_top = -103.0
-offset_right = 1572.0
-offset_bottom = 170.0
+offset_left = 247.32106
+offset_top = 2531.7258
+offset_right = 908.32104
+offset_bottom = 2804.7258
 grow_horizontal = 2
+scale = Vector2(0.96827227, 4.419148)
 
 [node name="Title" type="Label" parent="Bar/Count/HBoxContainer" unique_id=1475386031]
 layout_mode = 2
@@ -40,10 +45,11 @@ vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Bar/Count" unique_id=2039741834]
 layout_mode = 0
-offset_left = -791.0
-offset_top = 746.0
-offset_right = -97.0
-offset_bottom = 1572.0
+offset_left = 1148.4514
+offset_top = 2046.6045
+offset_right = 1842.4514
+offset_bottom = 2872.6045
+scale = Vector2(1, 4.5360413)
 
 [node name="Month label" type="Label" parent="Bar/Count/VBoxContainer" unique_id=293590823]
 layout_mode = 2
@@ -56,6 +62,14 @@ size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 200
 text = "1"
+
+[node name="sixtySec" type="Timer" parent="Bar/Count/VBoxContainer" unique_id=1819733099]
+wait_time = 60.0
+autostart = true
+
+[node name="fiveSec" type="Timer" parent="Bar/Count/VBoxContainer/sixtySec" unique_id=985256]
+wait_time = 5.0
+autostart = true
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="Bar" unique_id=2135746268]
 layout_mode = 2
