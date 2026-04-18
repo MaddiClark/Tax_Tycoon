@@ -18,3 +18,9 @@ offset_left = -144.0
 offset_top = -134.0
 offset_right = -87.0
 offset_bottom = 3.0
+
+[node name="Control" type="Control" parent="." index="1" unique_id=1952136154]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
