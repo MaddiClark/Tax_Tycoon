@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bbyag1sb4ot5c"]
+
+[ext_resource type="PackedScene" uid="uid://bqcmkfwmbcws0" path="res://Interface/Counter/counter.tscn" id="1_ffdox"]
+[ext_resource type="Texture2D" uid="uid://q8hwmd14lfg2" path="res://Interface/Counter/Coin/coin.png" id="2_wabcd"]
+
+[node name="Node2D" unique_id=613081882 instance=ExtResource("1_ffdox")]
+
+[node name="Counter" parent="." index="0" unique_id=1269404973]
+offset_left = 216.0
+offset_top = 138.0
+offset_right = 717.0
+offset_bottom = 596.0
+size_flags_vertical = 8
+texture = ExtResource("2_wabcd")
+
+[node name="Label" parent="Counter" index="0" unique_id=290496796]
+offset_left = -144.0
+offset_top = -134.0
+offset_right = -87.0
+offset_bottom = 3.0
