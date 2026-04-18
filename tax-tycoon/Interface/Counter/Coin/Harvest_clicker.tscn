@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cuvprps6fw18p"]
+
+[ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Interface/Harvest_Clicker/Harvester.png.png" id="1_tajk3"]
+
+[node name="Node2D" type="Node2D" unique_id=755072613]
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=45363647]
+offset_left = -119.0
+offset_top = -214.0
+offset_right = 1186.0
+offset_bottom = 847.0
+texture_normal = ExtResource("1_tajk3")
