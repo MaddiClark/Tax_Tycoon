@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bqcmkfwmbcws0"]
+
+[ext_resource type="Texture2D" uid="uid://lk4bwm4jv2wq" path="res://Interface/Counter/Strawberry/Strawberry.png" id="1_wcxvy"]
+
+[node name="Node2D" type="Node2D" unique_id=613081882]
+
+[node name="Counter" type="NinePatchRect" parent="." unique_id=1269404973]
+offset_left = 192.0
+offset_top = 139.0
+offset_right = 693.0
+offset_bottom = 597.0
+texture = ExtResource("1_wcxvy")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Label" type="Label" parent="Counter" unique_id=290496796]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -137.0
+offset_right = 57.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 100
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Icon" type="TextureRect" parent="Counter" unique_id=280981184]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.24151696
+anchor_top = 0.49126637
+anchor_right = 0.24151696
+anchor_bottom = 0.49126637
+offset_left = -512.0
+offset_top = -256.0
+offset_bottom = 256.0
+grow_horizontal = 0
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
