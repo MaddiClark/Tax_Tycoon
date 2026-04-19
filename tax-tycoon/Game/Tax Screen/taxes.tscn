@@ -1,3 +1,12 @@
 [gd_scene format=3 uid="uid://bwvf3n18fgseg"]
 
+[ext_resource type="Script" uid="uid://dvbv2fpqweb3a" path="res://Game/Tax Screen/back_to_farm.gd" id="1_gf2in"]
+
 [node name="Taxes" type="Node2D" unique_id=1097440002]
+
+[node name="Back_To_Farm" type="TextureButton" parent="." unique_id=935609249]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gf2in")
+
+[connection signal="pressed" from="Back_To_Farm" to="Back_To_Farm" method="_on_pressed"]
