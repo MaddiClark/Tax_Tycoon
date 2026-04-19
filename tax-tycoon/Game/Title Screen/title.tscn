@@ -1,17 +1,23 @@
 [gd_scene format=3 uid="uid://dpdwuj2d8mptu"]
 
-[ext_resource type="Texture2D" uid="uid://cqa367qw04gx5" path="res://Interface/Bar/Time Bar/red-square.png" id="1_oyqm6"]
+[ext_resource type="Texture2D" uid="uid://bmlwmj1re8wda" path="res://Game/Farm Screen/Main/Main.png" id="1_xosoc"]
+[ext_resource type="Texture2D" uid="uid://b0yc0k2mfej3n" path="res://Interface/Title/Title.png" id="2_0bbgq"]
 [ext_resource type="Script" uid="uid://35f274qwhrrh" path="res://Game/Title Screen/start_button.gd" id="2_kpexm"]
 
 [node name="Title" type="Node2D" unique_id=824176691]
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287981949]
+position = Vector2(600, 336)
+scale = Vector2(0.5, 0.4)
+texture = ExtResource("1_xosoc")
+
 [node name="Start Button" type="TextureButton" parent="." unique_id=1046947454]
-offset_left = 444.00006
-offset_top = 188.00002
-offset_right = 2844.0
-offset_bottom = 2588.0
-scale = Vector2(0.10362664, 0.09429309)
-texture_normal = ExtResource("1_oyqm6")
+offset_left = 80.0
+offset_top = 3.0
+offset_right = 2722.4998
+offset_bottom = 1671.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("2_0bbgq")
 script = ExtResource("2_kpexm")
 
 [connection signal="pressed" from="Start Button" to="Start Button" method="_on_pressed"]

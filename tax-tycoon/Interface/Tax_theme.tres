@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://d1ss7i4j7thrx"]
+
+[ext_resource type="FontFile" uid="uid://bilxlca2hdvtv" path="res://Interface/Theme/cute-egg-font/CuteEgg-lgRAw.otf" id="1_1wmyb"]
+
+[resource]
+font/colors/Coral = Color(0.96163744, 0.37315184, 0.2976018, 1)
+font/fonts/Cute = ExtResource("1_1wmyb")

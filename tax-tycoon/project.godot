@@ -18,6 +18,10 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 
 global="*uid://dfuvfbp1h6k"
 
+[gui]
+
+theme/custom_font="uid://d1ss7i4j7thrx"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
