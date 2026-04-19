@@ -1,9 +1,9 @@
 extends Node
 
 var count = 0
-var tractor = false
-var shovel = false
-var sprinkler = false
+var tractor_upgrade = false
+var sprinkler_upgrade = false
+var shovel_upgrade = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
