@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsintxn5yq7a4"
-path="res://.godot/imported/Coin.png-08534f1faa373cbb166a80e9f3e995be.ctex"
+uid="uid://ck8q3gujc3jc7"
+path="res://.godot/imported/Sprinkler.png-cb5b7730b76f9c322cf6d84dce156450.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Interface/Counter/Coin/Coin.png"
-dest_files=["res://.godot/imported/Coin.png-08534f1faa373cbb166a80e9f3e995be.ctex"]
+source_file="res://Interface/Upgrade PNGS/Sprinkler.png"
+dest_files=["res://.godot/imported/Sprinkler.png-cb5b7730b76f9c322cf6d84dce156450.ctex"]
 
 [params]
 
