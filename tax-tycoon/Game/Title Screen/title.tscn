@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dpdwuj2d8mptu"]
 
 [ext_resource type="Texture2D" uid="uid://cqa367qw04gx5" path="res://Interface/Bar/Time Bar/red-square.png" id="1_oyqm6"]
-[ext_resource type="Script" uid="uid://35f274qwhrrh" path="res://start_button.gd" id="2_kpexm"]
+[ext_resource type="Script" uid="uid://35f274qwhrrh" path="res://Game/Title Screen/start_button.gd" id="2_kpexm"]
 
 [node name="Title" type="Node2D" unique_id=824176691]
 
