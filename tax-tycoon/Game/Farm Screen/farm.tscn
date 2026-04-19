@@ -54,6 +54,7 @@ offset_bottom = 40.0
 
 [node name="Year Label" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=158315755]
 layout_mode = 2
+text = "Year:"
 
 [node name="Year" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=1136844809]
 layout_mode = 2
@@ -65,6 +66,7 @@ offset_bottom = 40.0
 
 [node name="Month Label" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=808407147]
 layout_mode = 2
+text = "Month:"
 
 [node name="Month" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=1784837044]
 layout_mode = 2
