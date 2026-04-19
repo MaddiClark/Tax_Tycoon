@@ -1,3 +1,28 @@
 [gd_scene format=3 uid="uid://djvmx8qm7dvue"]
 
+[ext_resource type="Script" uid="uid://ducgey13baxs3" path="res://main.gd" id="1_3dxm6"]
+[ext_resource type="PackedScene" uid="uid://dpdwuj2d8mptu" path="res://title.tscn" id="2_lgr22"]
+[ext_resource type="Script" uid="uid://ykavehu88tob" path="res://title.gd" id="3_trn2v"]
+[ext_resource type="PackedScene" uid="uid://dm7qxdre2dc3d" path="res://farm.tscn" id="4_03owx"]
+[ext_resource type="PackedScene" uid="uid://dkhbq22e5ax08" path="res://upgrades.tscn" id="5_wkp8b"]
+[ext_resource type="PackedScene" uid="uid://bwvf3n18fgseg" path="res://taxes.tscn" id="6_20pc6"]
+
 [node name="Main" type="Node2D" unique_id=399483831]
+script = ExtResource("1_3dxm6")
+
+[node name="World" type="Node2D" parent="." unique_id=52844577]
+
+[node name="Title" parent="World" unique_id=824176691 instance=ExtResource("2_lgr22")]
+script = ExtResource("3_trn2v")
+
+[node name="Start Button" type="TextureButton" parent="World/Title" unique_id=1513948392]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Farm" parent="World" unique_id=232668658 instance=ExtResource("4_03owx")]
+
+[node name="Upgrades" parent="World" unique_id=1164804630 instance=ExtResource("5_wkp8b")]
+
+[node name="Taxes" parent="World" unique_id=1097440002 instance=ExtResource("6_20pc6")]
+
+[node name="GUI" type="Node2D" parent="." unique_id=445567231]
