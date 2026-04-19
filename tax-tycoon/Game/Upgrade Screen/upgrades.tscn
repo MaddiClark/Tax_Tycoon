@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://cqa367qw04gx5" path="res://Interface/Bar/Time Bar/red-square.png" id="1_ek2r5"]
 [ext_resource type="Script" uid="uid://c3u5oy505fl8i" path="res://Game/Upgrade Screen/texture_button.gd" id="1_exmdf"]
+[ext_resource type="Script" uid="uid://kahb0ftah4qv" path="res://Game/Upgrade Screen/tractor_upgrade.gd" id="3_2hdfm"]
+[ext_resource type="Script" uid="uid://chc37pvylivvj" path="res://Game/Upgrade Screen/shovel_upgrade.gd" id="4_f7xec"]
+[ext_resource type="Script" uid="uid://cqo7uqda3xa24" path="res://Game/Upgrade Screen/sprinkler_upgrade.gd" id="5_dtp0k"]
 
 [node name="Upgrades" type="Node2D" unique_id=1164804630]
 
@@ -14,4 +17,22 @@ scale = Vector2(0.074503325, 0.07278484)
 texture_normal = ExtResource("1_ek2r5")
 script = ExtResource("1_exmdf")
 
+[node name="Tractor Upgrade" type="TextureButton" parent="." unique_id=1837898509]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_2hdfm")
+
+[node name="Shovel Upgrade" type="TextureButton" parent="." unique_id=885662778]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_f7xec")
+
+[node name="Sprinkler Upgrade" type="TextureButton" parent="." unique_id=625434061]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_dtp0k")
+
 [connection signal="pressed" from="Farm Button" to="Farm Button" method="_on_pressed"]
+[connection signal="pressed" from="Tractor Upgrade" to="Tractor Upgrade" method="_on_pressed"]
+[connection signal="pressed" from="Shovel Upgrade" to="Shovel Upgrade" method="_on_pressed"]
+[connection signal="pressed" from="Sprinkler Upgrade" to="Sprinkler Upgrade" method="_on_pressed"]

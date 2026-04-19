@@ -1,9 +1,5 @@
-extends Node
+extends TextureButton
 
-var count = 0
-var tractor = false
-var shovel = false
-var sprinkler = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,3 +9,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+
+func _on_pressed() -> void:
+	global.shovel = true
