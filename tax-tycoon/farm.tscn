@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://dm7qxdre2dc3d"]
 
+[ext_resource type="Texture2D" uid="uid://cqa367qw04gx5" path="res://Interface/Bar/Time Bar/red-square.png" id="1_bw225"]
+[ext_resource type="Script" uid="uid://d3n7v3n6i3i8t" path="res://upgrade_button.gd" id="2_vkr66"]
+
 [node name="Farm" type="Node2D" unique_id=232668658]
+
+[node name="Upgrade Button" type="TextureButton" parent="." unique_id=1674159857]
+offset_left = 448.99997
+offset_top = 169.99998
+offset_right = 2849.0
+offset_bottom = 2570.0
+scale = Vector2(0.10386838, 0.10471681)
+texture_normal = ExtResource("1_bw225")
+script = ExtResource("2_vkr66")

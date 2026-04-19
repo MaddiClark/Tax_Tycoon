@@ -3,8 +3,6 @@
 [ext_resource type="Script" uid="uid://ducgey13baxs3" path="res://main.gd" id="1_3dxm6"]
 [ext_resource type="PackedScene" uid="uid://dpdwuj2d8mptu" path="res://title.tscn" id="2_lgr22"]
 [ext_resource type="PackedScene" uid="uid://dm7qxdre2dc3d" path="res://farm.tscn" id="4_03owx"]
-[ext_resource type="Texture2D" uid="uid://cqa367qw04gx5" path="res://Interface/Bar/Time Bar/red-square.png" id="4_wkp8b"]
-[ext_resource type="Script" uid="uid://35f274qwhrrh" path="res://start_button.gd" id="5_20pc6"]
 [ext_resource type="PackedScene" uid="uid://dkhbq22e5ax08" path="res://upgrades.tscn" id="5_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://bwvf3n18fgseg" path="res://taxes.tscn" id="6_20pc6"]
 
@@ -15,29 +13,10 @@ script = ExtResource("1_3dxm6")
 
 [node name="Title" parent="World" unique_id=824176691 instance=ExtResource("2_lgr22")]
 
-[node name="Start Button" type="TextureButton" parent="World/Title" unique_id=1513948392]
-offset_left = 444.00006
-offset_top = 188.00002
-offset_right = 2844.0
-offset_bottom = 2588.0
-scale = Vector2(0.10362664, 0.09429309)
-texture_normal = ExtResource("4_wkp8b")
-script = ExtResource("5_20pc6")
-
 [node name="Farm" parent="World" unique_id=232668658 instance=ExtResource("4_03owx")]
 
-[node name="Upgrade Button" type="TextureButton" parent="World/Farm" unique_id=534591676]
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="Upgrades" parent="World" unique_id=1164804630 instance=ExtResource("5_wkp8b")]
-
-[node name="Farm Button" type="TextureButton" parent="World/Upgrades" unique_id=2060095823]
-offset_right = 40.0
-offset_bottom = 40.0
 
 [node name="Taxes" parent="World" unique_id=1097440002 instance=ExtResource("6_20pc6")]
 
 [node name="GUI" type="Node2D" parent="." unique_id=445567231]
-
-[connection signal="pressed" from="World/Title/Start Button" to="World/Title/Start Button" method="_on_pressed"]

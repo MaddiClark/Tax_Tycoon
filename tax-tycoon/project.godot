@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Tax Tycoon"
-run/main_scene="uid://dpdwuj2d8mptu"
+run/main_scene="uid://djvmx8qm7dvue"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [physics]
