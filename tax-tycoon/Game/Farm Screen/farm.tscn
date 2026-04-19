@@ -53,13 +53,6 @@ offset_bottom = 800.94446
 scale = Vector2(1.3945073, 1.3286412)
 text = "0"
 
-[node name="Timer60" type="Timer" parent="." unique_id=999964223]
-wait_time = 60.0
-one_shot = true
-
-[node name="Timer5" type="Timer" parent="." unique_id=726239568]
-wait_time = 5.0
-
 [node name="Bar_Node" type="Node2D" parent="." unique_id=591156564]
 position = Vector2(155, 13)
 scale = Vector2(1.8000001, 1.7)
@@ -133,5 +126,3 @@ texture = ExtResource("9_7j0pg")
 
 [connection signal="pressed" from="Upgrade Button" to="." method="_on_upgrade_button_pressed"]
 [connection signal="pressed" from="Strawberry Counter/Strawberry Patch" to="Strawberry Counter/Strawberry Patch" method="_on_pressed"]
-[connection signal="timeout" from="Timer60" to="." method="_on_timer_60_timeout"]
-[connection signal="timeout" from="Timer5" to="." method="_on_timer_5_timeout"]
