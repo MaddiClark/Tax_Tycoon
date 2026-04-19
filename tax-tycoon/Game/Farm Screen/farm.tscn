@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://d3n7v3n6i3i8t" path="res://Game/Farm Screen/upgrade_button.gd" id="2_vkr66"]
 [ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Interface/Harvest_Clicker/Harvester.png.png" id="3_1m528"]
 [ext_resource type="Script" uid="uid://bqig6wqfedh8t" path="res://Game/Farm Screen/strawberry_patch.gd" id="4_1m528"]
+[ext_resource type="Script" uid="uid://6c85b3ythqex" path="res://Game/Farm Screen/bar_node.gd" id="5_ofv8v"]
 
 [node name="Farm" type="Node2D" unique_id=232668658]
 
@@ -35,6 +36,45 @@ offset_right = 1196.4877
 offset_bottom = 800.94446
 scale = Vector2(1.3945073, 1.3286412)
 text = "0"
+
+[node name="Bar Node" type="Node2D" parent="." unique_id=591156564]
+script = ExtResource("5_ofv8v")
+
+[node name="Bar" type="HBoxContainer" parent="Bar Node" unique_id=1287771866]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Count" type="NinePatchRect" parent="Bar Node/Bar" unique_id=916694389]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Bar Node/Bar/Count" unique_id=1703715351]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Year Label" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=158315755]
+layout_mode = 2
+
+[node name="Year" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=1136844809]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Bar Node/Bar/Count" unique_id=979938552]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Month Label" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=808407147]
+layout_mode = 2
+
+[node name="Month" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=1784837044]
+layout_mode = 2
+
+[node name="Timer Progress" type="TextureProgressBar" parent="Bar Node/Bar" unique_id=1842407823]
+layout_mode = 2
+
+[node name="Timer60" type="Timer" parent="Bar Node" unique_id=999964223]
+
+[node name="Timer5" type="Timer" parent="Bar Node" unique_id=726239568]
 
 [connection signal="pressed" from="Upgrade Button" to="Upgrade Button" method="_on_pressed"]
 [connection signal="pressed" from="Strawberry Counter/Strawberry Patch" to="Strawberry Counter/Strawberry Patch" method="_on_pressed"]
