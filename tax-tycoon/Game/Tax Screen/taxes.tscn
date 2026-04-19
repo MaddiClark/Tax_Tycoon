@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bwvf3n18fgseg"]
 
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://c7f8jjmlyy6wq" path="res://Interface/Taxes/Taxdesk.png" id="1_c7xrh"]
 [ext_resource type="Texture2D" uid="uid://gy8xe67sk0rc" path="res://Interface/Taxes/W2.png" id="2_8dfps"]
 [ext_resource type="Texture2D" uid="uid://bnfre00mcauxt" path="res://Interface/Taxes/IMG_3591.jpg" id="3_w8rkx"]
@@ -69,3 +70,15 @@ texture = ExtResource("8_dwusn")
 position = Vector2(668, 121)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("9_uksb1")
+=======
+[ext_resource type="Script" uid="uid://dvbv2fpqweb3a" path="res://Game/Tax Screen/back_to_farm.gd" id="1_gf2in"]
+
+[node name="Taxes" type="Node2D" unique_id=1097440002]
+
+[node name="Back_To_Farm" type="TextureButton" parent="." unique_id=935609249]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gf2in")
+
+[connection signal="pressed" from="Back_To_Farm" to="Back_To_Farm" method="_on_pressed"]
+>>>>>>> 0c1ac9a440bbcc7e7cc8272a060138e436cce518

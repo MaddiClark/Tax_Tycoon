@@ -18,5 +18,3 @@ script = ExtResource("1_rl4yr")
 [node name="Upgrades" parent="World" unique_id=1164804630 instance=ExtResource("4_3xx61")]
 
 [node name="Taxes" parent="World" unique_id=1097440002 instance=ExtResource("5_q34ae")]
-
-[node name="GUI" type="Node2D" parent="." unique_id=445567231]
