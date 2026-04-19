@@ -73,7 +73,6 @@ autostart = true
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="Bar" unique_id=2135746268]
 layout_mode = 2
-value = 20.0
 texture_under = ExtResource("1_dpt8x")
 texture_progress = SubResource("CompressedTexture2D_hgxg1")
 texture_progress_offset = Vector2(-120, 0)

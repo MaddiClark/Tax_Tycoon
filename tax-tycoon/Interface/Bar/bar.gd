@@ -3,6 +3,7 @@ extends Node2D
 @onready var monTimer = $Bar/Count/VBoxContainer/sixtySec
 @onready var month = $Bar/Count/VBoxContainer/Month
 @onready var monCount = $Bar/Count/VBoxContainer/sixtySec/fiveSec
+@onready var progress = $Bar/TextureProgressBar
 var steppy = 0
 var farmTime = true
 
@@ -13,8 +14,12 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
+	if farmTime:
+		var timeElapsed = (monTimer.time_left - 60) * (-1)
+		print(timeElapsed)
+		var barPercent = (timeElapsed / 60) * 100
+		print(barPercent)
+		progress.value = barPercent
 
 func _on_timer_timeout5() -> void:
 	steppy += 1
