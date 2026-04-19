@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cuvprps6fw18p"]
 
-[ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Interface/Harvest_Clicker/Harvester.png.png" id="1_tajk3"]
+[ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Game/Farm Screen/Main/Harvest_Clicker/Harvester.png.png" id="1_tajk3"]
 
 [node name="Node2D" type="Node2D" unique_id=755072613]
 

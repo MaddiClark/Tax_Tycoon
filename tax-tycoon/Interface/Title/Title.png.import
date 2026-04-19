@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsintxn5yq7a4"
-path="res://.godot/imported/Coin.png-08534f1faa373cbb166a80e9f3e995be.ctex"
+uid="uid://b0yc0k2mfej3n"
+path="res://.godot/imported/Title.png-6672e32b89ba3adab950015f73d54a24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Interface/Counter/Coin/Coin.png"
-dest_files=["res://.godot/imported/Coin.png-08534f1faa373cbb166a80e9f3e995be.ctex"]
+source_file="res://Interface/Title/Title.png"
+dest_files=["res://.godot/imported/Title.png-6672e32b89ba3adab950015f73d54a24.ctex"]
 
 [params]
 

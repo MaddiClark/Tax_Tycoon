@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boaawsmar3ywf"
-path="res://.godot/imported/Harvester.png.png-69d61299d6066b78f131cf6ba3ef17cc.ctex"
+uid="uid://dxqns6st1w83q"
+path="res://.godot/imported/Tractor.png-76b0c0f9d1fec810206117836bc60da6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Interface/Harvest_Clicker/Harvester.png.png"
-dest_files=["res://.godot/imported/Harvester.png.png-69d61299d6066b78f131cf6ba3ef17cc.ctex"]
+source_file="res://Interface/Upgrade PNGS/Tractor.png"
+dest_files=["res://.godot/imported/Tractor.png-76b0c0f9d1fec810206117836bc60da6.ctex"]
 
 [params]
 

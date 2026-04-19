@@ -1,6 +1,5 @@
-[gd_scene format=3 uid="uid://dekv7me3jck0"]
+[gd_scene format=3 uid="uid://dqwywc77j50ki"]
 
-[ext_resource type="Script" uid="uid://cwo080hlgt2eh" path="res://Interface/Strawberry/texture_button.gd" id="2_ehm7i"]
 [ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Game/Farm Screen/Main/Harvest_Clicker/Harvester.png.png" id="2_p82t1"]
 
 [node name="Node2D" type="Node2D" unique_id=613081882]
@@ -22,7 +21,6 @@ offset_top = -352.0
 offset_right = 1097.0
 offset_bottom = 709.0
 texture_normal = ExtResource("2_p82t1")
-script = ExtResource("2_ehm7i")
 
 [node name="Label" type="Label" parent="Counter/TextureButton" unique_id=290496796]
 layout_mode = 1

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cqa367qw04gx5" path="res://Interface/Bar/Time Bar/red-square.png" id="1_bw225"]
 [ext_resource type="Script" uid="uid://d3n7v3n6i3i8t" path="res://Game/Farm Screen/upgrade_button.gd" id="2_vkr66"]
-[ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Interface/Harvest_Clicker/Harvester.png.png" id="3_1m528"]
+[ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Game/Farm Screen/Main/Harvest_Clicker/Harvester.png.png" id="3_1m528"]
 [ext_resource type="Script" uid="uid://bqig6wqfedh8t" path="res://Game/Farm Screen/strawberry_patch.gd" id="4_1m528"]
 [ext_resource type="Script" uid="uid://6c85b3ythqex" path="res://Game/Farm Screen/bar_node.gd" id="5_ofv8v"]
 

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bkarcej5pnk73"]
+
+[ext_resource type="Texture2D" uid="uid://bmlwmj1re8wda" path="res://Game/Farm Screen/Main/Main.png" id="1_3vuv0"]
+[ext_resource type="PackedScene" uid="uid://cuvprps6fw18p" path="res://Interface/Counter/Coin/Harvest_clicker.tscn" id="2_w21p2"]
+
+[node name="MainScreen" type="Node2D" unique_id=726284792]
+
+[node name="Main" type="NinePatchRect" parent="." unique_id=1087825815]
+offset_right = 1150.0
+offset_bottom = 648.0
+
+[node name="TextureRect" type="TextureRect" parent="Main" unique_id=1958286329]
+layout_mode = 0
+offset_right = 2388.0
+offset_bottom = 1668.0
+texture = ExtResource("1_3vuv0")
+
+[node name="Node2D" parent="Main" unique_id=755072613 instance=ExtResource("2_w21p2")]
+position = Vector2(414, 928)
+scale = Vector2(1.171383, 1.1746799)
+metadata/_edit_lock_ = true

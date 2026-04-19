@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsintxn5yq7a4"
-path="res://.godot/imported/Coin.png-08534f1faa373cbb166a80e9f3e995be.ctex"
+uid="uid://boaawsmar3ywf"
+path="res://.godot/imported/Harvester.png.png-6a4178690da64949bbaa35474234db27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Interface/Counter/Coin/Coin.png"
-dest_files=["res://.godot/imported/Coin.png-08534f1faa373cbb166a80e9f3e995be.ctex"]
+source_file="res://Game/Farm Screen/Main/Harvest_Clicker/Harvester.png.png"
+dest_files=["res://.godot/imported/Harvester.png.png-6a4178690da64949bbaa35474234db27.ctex"]
 
 [params]
 

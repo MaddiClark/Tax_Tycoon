@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsintxn5yq7a4"
-path="res://.godot/imported/Coin.png-08534f1faa373cbb166a80e9f3e995be.ctex"
+uid="uid://bmlwmj1re8wda"
+path="res://.godot/imported/Main.png-cfb7a086b3d571e0005f21929fbb0ca0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Interface/Counter/Coin/Coin.png"
-dest_files=["res://.godot/imported/Coin.png-08534f1faa373cbb166a80e9f3e995be.ctex"]
+source_file="res://Game/Farm Screen/Main/Main.png"
+dest_files=["res://.godot/imported/Main.png-cfb7a086b3d571e0005f21929fbb0ca0.ctex"]
 
 [params]
 
