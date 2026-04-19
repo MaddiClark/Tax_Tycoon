@@ -13,5 +13,5 @@ func _process(_delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	get_node("Main").count += 1
-	get_node("Count Label").text = str(get_node("Main").count)
+	global.count += 1
+	get_node("Count Label").text = str(global.count)
