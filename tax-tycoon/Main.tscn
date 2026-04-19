@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dpdwuj2d8mptu" path="res://title.tscn" id="2_lgr22"]
 [ext_resource type="Script" uid="uid://ykavehu88tob" path="res://title.gd" id="3_trn2v"]
 [ext_resource type="PackedScene" uid="uid://dm7qxdre2dc3d" path="res://farm.tscn" id="4_03owx"]
+[ext_resource type="Script" uid="uid://b25u1f576t2o" path="res://farm.gd" id="5_lgr22"]
 [ext_resource type="PackedScene" uid="uid://dkhbq22e5ax08" path="res://upgrades.tscn" id="5_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://bwvf3n18fgseg" path="res://taxes.tscn" id="6_20pc6"]
 
@@ -20,6 +21,11 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Farm" parent="World" unique_id=232668658 instance=ExtResource("4_03owx")]
+script = ExtResource("5_lgr22")
+
+[node name="Upgrade Button" type="TextureButton" parent="World/Farm" unique_id=534591676]
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="Upgrades" parent="World" unique_id=1164804630 instance=ExtResource("5_wkp8b")]
 
