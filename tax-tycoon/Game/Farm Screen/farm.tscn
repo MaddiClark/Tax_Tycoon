@@ -18,31 +18,39 @@ script = ExtResource("1_r7iww")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = -2.0
-offset_right = 2390.0
-offset_bottom = 1666.0
+offset_left = -36.0
+offset_top = -5.0
+offset_right = 2352.0
+offset_bottom = 1663.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.5, 0.4)
 size_flags_horizontal = 0
 size_flags_vertical = 0
 texture_normal = ExtResource("1_a2iym")
-stretch_mode = 3
+stretch_mode = 0
 script = ExtResource("2_vkr66")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="Strawberry Counter" type="Node2D" parent="." unique_id=1390817816]
 position = Vector2(85, -5)
 scale = Vector2(1.1, 0.90000004)
 
 [node name="Strawberry Patch" type="TextureButton" parent="Strawberry Counter" unique_id=1575469975]
-offset_left = 2.0
-offset_top = 231.00002
-offset_right = 1307.0
-offset_bottom = 1292.0
-scale = Vector2(0.31734022, 0.38820252)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 44.545452
+offset_top = 301.1111
+offset_right = 1380.909
+offset_bottom = 1362.1111
+grow_horizontal = 0
+scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("3_1m528")
+stretch_mode = 0
 script = ExtResource("4_1m528")
+metadata/_edit_lock_ = true
 
 [node name="Count Label" type="Label" parent="Strawberry Counter/Strawberry Patch" unique_id=741097516]
 layout_mode = 0
@@ -53,15 +61,6 @@ offset_bottom = 800.94446
 scale = Vector2(1.3945073, 1.3286412)
 text = "0"
 
-[node name="Timer60" type="Timer" parent="." unique_id=999964223]
-wait_time = 60.0
-one_shot = true
-autostart = true
-
-[node name="Timer5" type="Timer" parent="." unique_id=726239568]
-wait_time = 5.0
-autostart = true
-
 [node name="Bar_Node" type="Node2D" parent="." unique_id=591156564]
 position = Vector2(155, 13)
 scale = Vector2(1.8000001, 1.7)
@@ -70,11 +69,12 @@ scale = Vector2(1.8000001, 1.7)
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 64.99999
-offset_top = -23.529411
-offset_right = 169.0
-offset_bottom = 76.47059
+offset_left = 128.33333
+offset_top = -24.705881
+offset_right = 241.11113
+offset_bottom = 75.29413
 grow_horizontal = 2
+scale = Vector2(1.5, 1.4)
 theme = ExtResource("6_dn4uu")
 
 [node name="Timer_Progress" type="TextureProgressBar" parent="Bar_Node/Bar" unique_id=1842407823]
@@ -94,17 +94,29 @@ offset_right = -75.77777
 offset_bottom = 86.117645
 theme = ExtResource("6_dn4uu")
 
+<<<<<<< Updated upstream
 [node name="Month Label" type="Label" parent="Bar_Node/Bar/Count/VBoxContainer" unique_id=808407147]
+=======
+[node name="Month Label" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=1913890221]
+texture_filter = 1
+>>>>>>> Stashed changes
 layout_mode = 2
-theme = ExtResource("6_dn4uu")
 theme_override_fonts/font = ExtResource("9_dn4uu")
 theme_override_font_sizes/font_size = 8
 text = "Month:"
 
+<<<<<<< Updated upstream
 [node name="Month" type="Label" parent="Bar_Node/Bar/Count/VBoxContainer" unique_id=1784837044]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
 theme_override_font_sizes/font_size = 8
+text = "1"
+=======
+[node name="Month" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=2097540515]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_dn4uu")
+>>>>>>> Stashed changes
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Bar_Node/Bar/Count" unique_id=1703715351]
 layout_mode = 1
@@ -117,22 +129,31 @@ offset_right = -27.44445
 offset_bottom = 41.941177
 grow_horizontal = 2
 
+<<<<<<< Updated upstream
 [node name="Year Label" type="Label" parent="Bar_Node/Bar/Count/HBoxContainer" unique_id=158315755]
+=======
+[node name="Year Label" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=158315755]
+texture_filter = 1
+>>>>>>> Stashed changes
 layout_mode = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
 text = "Year:"
 
+<<<<<<< Updated upstream
 [node name="Year" type="Label" parent="Bar_Node/Bar/Count/HBoxContainer" unique_id=1136844809]
+=======
+[node name="Year" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=1136844809]
+texture_filter = 1
+>>>>>>> Stashed changes
 layout_mode = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=634891782]
 show_behind_parent = true
-position = Vector2(360, 248)
-scale = Vector2(0.3, 0.3)
+position = Vector2(575, 323.7)
+scale = Vector2(0.482412, 0.38645086)
 texture = ExtResource("9_7j0pg")
+metadata/_edit_lock_ = true
 
-[connection signal="pressed" from="Upgrade Button" to="Upgrade Button" method="_on_pressed"]
+[connection signal="pressed" from="Upgrade Button" to="." method="_on_upgrade_button_pressed"]
 [connection signal="pressed" from="Strawberry Counter/Strawberry Patch" to="Strawberry Counter/Strawberry Patch" method="_on_pressed"]
-[connection signal="timeout" from="Timer60" to="." method="_on_timer_60_timeout"]
-[connection signal="timeout" from="Timer5" to="." method="_on_timer_5_timeout"]
