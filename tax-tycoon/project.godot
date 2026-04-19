@@ -14,6 +14,10 @@ config/name="Tax Tycoon"
 run/main_scene="uid://djvmx8qm7dvue"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[autoload]
+
+global="*uid://dfuvfbp1h6k"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
