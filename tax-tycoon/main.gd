@@ -1,17 +1,10 @@
 extends Node2D
 
 
-@onready var startGame = $"World/Title/Start Game"
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	
-	startGame.button_pressed.connect(_start_pressed)
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
-
-func _start_pressed() -> void:
 	pass
