@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://bwvf3n18fgseg"]
 
+[ext_resource type="Script" uid="uid://dw5j8tq2nhoep" path="res://Game/Tax Screen/sprite_2d.gd" id="1_gf2in"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fgkgf"]
+
 [node name="Taxes" type="Node2D" unique_id=1097440002]
+
+[node name="Total Income" type="Node2D" parent="." unique_id=784204426]
+
+[node name="Sprite2D" type="Sprite2D" parent="Total Income" unique_id=372953758]
+script = ExtResource("1_gf2in")
+
+[node name="Area2D" type="Area2D" parent="Total Income" unique_id=7192858]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Total Income/Area2D" unique_id=1501311079]
+position = Vector2(889, 113.99999)
+scale = Vector2(13.299993, 2.0581396)
+shape = SubResource("RectangleShape2D_fgkgf")
