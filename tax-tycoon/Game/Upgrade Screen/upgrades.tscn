@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bwd0qrwv50fhs" path="res://Interface/Upgrade PNGS/pixil-frame-0.png" id="5_o0lo6"]
 [ext_resource type="Texture2D" uid="uid://ck8q3gujc3jc7" path="res://Interface/Upgrade PNGS/Sprinkler.png" id="7_si1fm"]
 [ext_resource type="Texture2D" uid="uid://da2a4or28v21a" path="res://Interface/Upgrade PNGS/Upgrades.png" id="9_pblno"]
+[ext_resource type="FontFile" uid="uid://bilxlca2hdvtv" path="res://Interface/Theme/cute-egg-font/CuteEgg-lgRAw.otf" id="10_1pbqd"]
 
 [node name="Upgrades" type="Node2D" unique_id=1164804630]
 
@@ -57,6 +58,42 @@ position = Vector2(575.2, 324.00003)
 scale = Vector2(0.48140705, 0.38920864)
 texture = ExtResource("9_pblno")
 metadata/_edit_lock_ = true
+
+[node name="Shovel Label" type="Label" parent="." unique_id=1731552534]
+offset_left = 183.0
+offset_top = 114.0
+offset_right = 335.0
+offset_bottom = 360.0
+theme_override_colors/font_color = Color(0.53498465, 0.07495629, 0.11942414, 1)
+theme_override_fonts/font = ExtResource("10_1pbqd")
+theme_override_font_sizes/font_size = 40
+text = "Shovel
+
+Price: "
+
+[node name="Sprinkler Label" type="Label" parent="." unique_id=482096524]
+offset_left = 486.0
+offset_top = 117.0
+offset_right = 688.0
+offset_bottom = 363.0
+theme_override_colors/font_color = Color(0.53498465, 0.07495629, 0.11942414, 1)
+theme_override_fonts/font = ExtResource("10_1pbqd")
+theme_override_font_sizes/font_size = 40
+text = "Sprinkler
+
+Price: "
+
+[node name="Tractor Label" type="Label" parent="." unique_id=1076388589]
+offset_left = 835.0
+offset_top = 120.0
+offset_right = 1037.0
+offset_bottom = 366.0
+theme_override_colors/font_color = Color(0.53498465, 0.07495629, 0.11942414, 1)
+theme_override_fonts/font = ExtResource("10_1pbqd")
+theme_override_font_sizes/font_size = 40
+text = "Tractor
+
+Price: "
 
 [connection signal="pressed" from="Farm Button" to="Farm Button" method="_on_pressed"]
 [connection signal="pressed" from="Tractor Upgrade" to="Tractor Upgrade" method="_on_pressed"]
