@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://bwvf3n18fgseg"]
 
 [ext_resource type="Texture2D" uid="uid://c7f8jjmlyy6wq" path="res://Interface/Taxes/Taxdesk.png" id="1_c7xrh"]
+[ext_resource type="Script" uid="uid://bkjvml8prxatx" path="res://Game/Tax Screen/taxes.gd" id="1_w8rkx"]
 [ext_resource type="Texture2D" uid="uid://gy8xe67sk0rc" path="res://Interface/Taxes/W2.png" id="2_8dfps"]
 [ext_resource type="Texture2D" uid="uid://bnfre00mcauxt" path="res://Interface/Taxes/IMG_3591.jpg" id="3_w8rkx"]
 [ext_resource type="Texture2D" uid="uid://ciu55eav1fuqn" path="res://Interface/Taxes/IMG_3592.jpg" id="4_cacpg"]
 [ext_resource type="Texture2D" uid="uid://e18me78ncckp" path="res://Interface/Pieces/Next.png" id="5_redat"]
 [ext_resource type="Texture2D" uid="uid://bphi3f7wla5d7" path="res://Interface/Taxes/Baby Jay.png" id="6_s2h7d"]
+[ext_resource type="Script" uid="uid://8bk5te8sd0s8" path="res://Game/Tax Screen/sprite_2d_2.gd" id="7_8dfps"]
 [ext_resource type="Texture2D" uid="uid://bmecldo4r4lli" path="res://Interface/Taxes/Farmer.png" id="7_mnn0e"]
 [ext_resource type="Texture2D" uid="uid://cjsrmse6eps15" path="res://Interface/Taxes/Income.png" id="8_dwusn"]
 [ext_resource type="Texture2D" uid="uid://dky36jhxmsd23" path="res://Interface/Taxes/ssnblock.png" id="9_uksb1"]
 
 [node name="Taxes" type="Node2D" unique_id=1097440002]
+script = ExtResource("1_w8rkx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=212720036]
 position = Vector2(576.2, 320.7)
@@ -54,6 +57,7 @@ texture_normal = ExtResource("5_redat")
 position = Vector2(643, 377)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("6_s2h7d")
+script = ExtResource("7_8dfps")
 
 [node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1155809817]
 position = Vector2(636, 230)
@@ -69,3 +73,5 @@ texture = ExtResource("8_dwusn")
 position = Vector2(668, 121)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("9_uksb1")
+
+[connection signal="pressed" from="Arrow" to="." method="_on_arrow_pressed"]
