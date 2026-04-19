@@ -22,3 +22,7 @@ script = ExtResource("1_rl4yr")
 [node name="GUI" type="Node2D" parent="." unique_id=445567231]
 
 [node name="Timer60" type="Timer" parent="." unique_id=1108962098]
+wait_time = 60.0
+
+[node name="Timer5" type="Timer" parent="." unique_id=2062611383]
+wait_time = 5.0

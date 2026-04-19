@@ -14,6 +14,11 @@ config/name="Tax Tycoon"
 run/main_scene="uid://djvmx8qm7dvue"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[autoload]
+
+Timer60="*uid://djvmx8qm7dvue"
+Timer5="*uid://djvmx8qm7dvue"
+
 [gui]
 
 theme/custom_font="uid://d1ss7i4j7thrx"
