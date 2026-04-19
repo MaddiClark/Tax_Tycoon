@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b1dfbh8hf1765" path="res://Interface/Bar/Bar in.png" id="8_vea0p"]
 [ext_resource type="Texture2D" uid="uid://bmlwmj1re8wda" path="res://Game/Farm Screen/Main/Main.png" id="9_7j0pg"]
 [ext_resource type="FontFile" uid="uid://bilxlca2hdvtv" path="res://Interface/Theme/cute-egg-font/CuteEgg-lgRAw.otf" id="9_dn4uu"]
+[ext_resource type="Script" uid="uid://c0qpfbvadlbhf" path="res://Game/Farm Screen/tax_time.gd" id="11_r7iww"]
 
 [node name="Farm" type="Node2D" unique_id=232668658]
 
@@ -127,5 +128,11 @@ position = Vector2(360, 248)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("9_7j0pg")
 
+[node name="Tax_Time" type="TextureButton" parent="." unique_id=287163472]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("11_r7iww")
+
 [connection signal="pressed" from="Upgrade Button" to="Upgrade Button" method="_on_pressed"]
 [connection signal="pressed" from="Strawberry Counter/Strawberry Patch" to="Strawberry Counter/Strawberry Patch" method="_on_pressed"]
+[connection signal="pressed" from="Tax_Time" to="Tax_Time" method="_on_pressed"]
