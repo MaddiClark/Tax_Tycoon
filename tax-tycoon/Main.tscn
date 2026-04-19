@@ -2,14 +2,11 @@
 
 [ext_resource type="Script" uid="uid://ducgey13baxs3" path="res://main.gd" id="1_3dxm6"]
 [ext_resource type="PackedScene" uid="uid://dpdwuj2d8mptu" path="res://title.tscn" id="2_lgr22"]
-[ext_resource type="Script" uid="uid://ykavehu88tob" path="res://title.gd" id="3_trn2v"]
 [ext_resource type="PackedScene" uid="uid://dm7qxdre2dc3d" path="res://farm.tscn" id="4_03owx"]
 [ext_resource type="Texture2D" uid="uid://cqa367qw04gx5" path="res://Interface/Bar/Time Bar/red-square.png" id="4_wkp8b"]
 [ext_resource type="Script" uid="uid://35f274qwhrrh" path="res://start_button.gd" id="5_20pc6"]
-[ext_resource type="Script" uid="uid://b25u1f576t2o" path="res://farm.gd" id="5_lgr22"]
 [ext_resource type="PackedScene" uid="uid://dkhbq22e5ax08" path="res://upgrades.tscn" id="5_wkp8b"]
 [ext_resource type="PackedScene" uid="uid://bwvf3n18fgseg" path="res://taxes.tscn" id="6_20pc6"]
-[ext_resource type="Script" uid="uid://dendwcu2y5nbh" path="res://upgrades.gd" id="7_trn2v"]
 
 [node name="Main" type="Node2D" unique_id=399483831]
 script = ExtResource("1_3dxm6")
@@ -17,7 +14,6 @@ script = ExtResource("1_3dxm6")
 [node name="World" type="Node2D" parent="." unique_id=52844577]
 
 [node name="Title" parent="World" unique_id=824176691 instance=ExtResource("2_lgr22")]
-script = ExtResource("3_trn2v")
 
 [node name="Start Button" type="TextureButton" parent="World/Title" unique_id=1513948392]
 offset_left = 444.00006
@@ -29,14 +25,12 @@ texture_normal = ExtResource("4_wkp8b")
 script = ExtResource("5_20pc6")
 
 [node name="Farm" parent="World" unique_id=232668658 instance=ExtResource("4_03owx")]
-script = ExtResource("5_lgr22")
 
 [node name="Upgrade Button" type="TextureButton" parent="World/Farm" unique_id=534591676]
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Upgrades" parent="World" unique_id=1164804630 instance=ExtResource("5_wkp8b")]
-script = ExtResource("7_trn2v")
 
 [node name="Farm Button" type="TextureButton" parent="World/Upgrades" unique_id=2060095823]
 offset_right = 40.0
