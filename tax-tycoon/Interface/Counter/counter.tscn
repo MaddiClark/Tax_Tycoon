@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqcmkfwmbcws0"]
 
-[ext_resource type="Texture2D" uid="uid://lk4bwm4jv2wq" path="res://Interface/Counter/Strawberry/Strawberry.png" id="1_wcxvy"]
+[ext_resource type="Texture2D" uid="uid://lk4bwm4jv2wq" path="res://Interface/Strawberry/Strawberry.png" id="1_wcxvy"]
 
 [node name="Node2D" type="Node2D" unique_id=613081882]
 

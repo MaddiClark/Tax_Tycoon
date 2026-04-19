@@ -5,7 +5,7 @@
 
 [node name="Upgrades" type="Node2D" unique_id=1164804630]
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=1795533147]
+[node name="Farm Button" type="TextureButton" parent="." unique_id=1795533147]
 offset_left = 500.99997
 offset_top = 195.0
 offset_right = 2901.0
@@ -14,4 +14,4 @@ scale = Vector2(0.074503325, 0.07278484)
 texture_normal = ExtResource("1_ek2r5")
 script = ExtResource("1_exmdf")
 
-[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Farm Button" to="Farm Button" method="_on_pressed"]

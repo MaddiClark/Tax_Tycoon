@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	count += 1
-	get_node("Label").text = str(count)
+	get_tree().get_node("Count Label").text = str(count)

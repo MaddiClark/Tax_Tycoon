@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dekv7me3jck0"]
 
-[ext_resource type="Script" path="res://Interface/Counter/Strawberry/texture_button.gd" id="2_ehm7i"]
+[ext_resource type="Script" uid="uid://cwo080hlgt2eh" path="res://Interface/Strawberry/texture_button.gd" id="2_ehm7i"]
 [ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Interface/Harvest_Clicker/Harvester.png.png" id="2_p82t1"]
 
 [node name="Node2D" type="Node2D" unique_id=613081882]
