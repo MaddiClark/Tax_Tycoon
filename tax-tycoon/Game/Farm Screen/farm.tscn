@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dm7qxdre2dc3d"]
 
 [ext_resource type="Texture2D" uid="uid://de47ya0jm8a3h" path="res://Interface/Barn/Barnn .png" id="1_a2iym"]
+[ext_resource type="Script" uid="uid://bhrqmmnhujqr8" path="res://Game/Farm Screen/farm.gd" id="1_r7iww"]
 [ext_resource type="Script" uid="uid://d3n7v3n6i3i8t" path="res://Game/Farm Screen/upgrade_button.gd" id="2_vkr66"]
 [ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Game/Farm Screen/Main/Harvest_Clicker/Harvester.png.png" id="3_1m528"]
 [ext_resource type="Script" uid="uid://bqig6wqfedh8t" path="res://Game/Farm Screen/strawberry_patch.gd" id="4_1m528"]
-[ext_resource type="Script" uid="uid://6c85b3ythqex" path="res://Game/Farm Screen/bar_node.gd" id="5_ofv8v"]
 [ext_resource type="Theme" uid="uid://d1ss7i4j7thrx" path="res://Interface/Tax_theme.tres" id="6_dn4uu"]
 [ext_resource type="Texture2D" uid="uid://fnctfrph0uuk" path="res://Interface/Bar/Bar out.png" id="7_r7iww"]
 [ext_resource type="Texture2D" uid="uid://b1dfbh8hf1765" path="res://Interface/Bar/Bar in.png" id="8_vea0p"]
@@ -12,36 +12,45 @@
 [ext_resource type="FontFile" uid="uid://bilxlca2hdvtv" path="res://Interface/Theme/cute-egg-font/CuteEgg-lgRAw.otf" id="9_dn4uu"]
 
 [node name="Farm" type="Node2D" unique_id=232668658]
+script = ExtResource("1_r7iww")
 
 [node name="Upgrade Button" type="TextureButton" parent="." unique_id=1674159857]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = -2.0
-offset_right = 2390.0
-offset_bottom = 1666.0
+offset_left = -36.0
+offset_top = -5.0
+offset_right = 2352.0
+offset_bottom = 1663.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.5, 0.4)
 size_flags_horizontal = 0
 size_flags_vertical = 0
 texture_normal = ExtResource("1_a2iym")
-stretch_mode = 3
+stretch_mode = 0
 script = ExtResource("2_vkr66")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="Strawberry Counter" type="Node2D" parent="." unique_id=1390817816]
 position = Vector2(85, -5)
 scale = Vector2(1.1, 0.90000004)
 
 [node name="Strawberry Patch" type="TextureButton" parent="Strawberry Counter" unique_id=1575469975]
-offset_left = 2.0
-offset_top = 231.00002
-offset_right = 1307.0
-offset_bottom = 1292.0
-scale = Vector2(0.31734022, 0.38820252)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 44.545452
+offset_top = 301.1111
+offset_right = 1380.909
+offset_bottom = 1362.1111
+grow_horizontal = 0
+scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("3_1m528")
+stretch_mode = 0
 script = ExtResource("4_1m528")
+metadata/_edit_lock_ = true
 
 [node name="Count Label" type="Label" parent="Strawberry Counter/Strawberry Patch" unique_id=741097516]
 layout_mode = 0
@@ -52,52 +61,32 @@ offset_bottom = 800.94446
 scale = Vector2(1.3945073, 1.3286412)
 text = "0"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-[node name="Timer60" type="Timer" parent="." unique_id=999964223]
-wait_time = 60.0
-one_shot = true
-autostart = true
-
-[node name="Timer5" type="Timer" parent="." unique_id=726239568]
-wait_time = 5.0
-autostart = true
-
->>>>>>> parent of 3a5af0e (I keep breaking shit)
 [node name="Bar_Node" type="Node2D" parent="." unique_id=591156564]
-=======
-[node name="Bar Node" type="Node2D" parent="." unique_id=591156564]
->>>>>>> parent of 971a298 (fixed progress bar)
-=======
-[node name="Bar Node" type="Node2D" parent="." unique_id=591156564]
->>>>>>> parent of 971a298 (fixed progress bar)
 position = Vector2(155, 13)
 scale = Vector2(1.8000001, 1.7)
-script = ExtResource("5_ofv8v")
 
-[node name="Bar" type="HBoxContainer" parent="Bar Node" unique_id=1287771866]
+[node name="Bar" type="HBoxContainer" parent="Bar_Node" unique_id=1287771866]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 64.99999
-offset_top = -23.529411
-offset_right = 169.0
-offset_bottom = 76.47059
+offset_left = 128.33333
+offset_top = -24.705881
+offset_right = 241.11113
+offset_bottom = 75.29413
 grow_horizontal = 2
+scale = Vector2(1.5, 1.4)
 theme = ExtResource("6_dn4uu")
 
-[node name="Timer Progress" type="TextureProgressBar" parent="Bar Node/Bar" unique_id=1842407823]
+[node name="Timer_Progress" type="TextureProgressBar" parent="Bar_Node/Bar" unique_id=1842407823]
 layout_mode = 2
 size_flags_horizontal = 10
 texture_under = ExtResource("7_r7iww")
 texture_progress = ExtResource("8_vea0p")
 
-[node name="Count" type="NinePatchRect" parent="Bar Node/Bar" unique_id=916694389]
+[node name="Count" type="NinePatchRect" parent="Bar_Node/Bar" unique_id=916694389]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Bar Node/Bar/Count" unique_id=979938552]
+[node name="VBoxContainer" type="VBoxContainer" parent="Bar_Node/Bar/Count" unique_id=979938552]
 layout_mode = 0
 offset_left = -136.77777
 offset_top = 24.117645
@@ -105,19 +94,31 @@ offset_right = -75.77777
 offset_bottom = 86.117645
 theme = ExtResource("6_dn4uu")
 
-[node name="Month Label" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=808407147]
+<<<<<<< Updated upstream
+[node name="Month Label" type="Label" parent="Bar_Node/Bar/Count/VBoxContainer" unique_id=808407147]
+=======
+[node name="Month Label" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=1913890221]
+texture_filter = 1
+>>>>>>> Stashed changes
 layout_mode = 2
-theme = ExtResource("6_dn4uu")
 theme_override_fonts/font = ExtResource("9_dn4uu")
 theme_override_font_sizes/font_size = 8
 text = "Month:"
 
-[node name="Month" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=1784837044]
+<<<<<<< Updated upstream
+[node name="Month" type="Label" parent="Bar_Node/Bar/Count/VBoxContainer" unique_id=1784837044]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
 theme_override_font_sizes/font_size = 8
+text = "1"
+=======
+[node name="Month" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=2097540515]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_dn4uu")
+>>>>>>> Stashed changes
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Bar Node/Bar/Count" unique_id=1703715351]
+[node name="HBoxContainer" type="HBoxContainer" parent="Bar_Node/Bar/Count" unique_id=1703715351]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -128,24 +129,31 @@ offset_right = -27.44445
 offset_bottom = 41.941177
 grow_horizontal = 2
 
+<<<<<<< Updated upstream
+[node name="Year Label" type="Label" parent="Bar_Node/Bar/Count/HBoxContainer" unique_id=158315755]
+=======
 [node name="Year Label" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=158315755]
+texture_filter = 1
+>>>>>>> Stashed changes
 layout_mode = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
 text = "Year:"
 
+<<<<<<< Updated upstream
+[node name="Year" type="Label" parent="Bar_Node/Bar/Count/HBoxContainer" unique_id=1136844809]
+=======
 [node name="Year" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=1136844809]
+texture_filter = 1
+>>>>>>> Stashed changes
 layout_mode = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
 
-[node name="Timer60" type="Timer" parent="Bar Node" unique_id=999964223]
-
-[node name="Timer5" type="Timer" parent="Bar Node" unique_id=726239568]
-
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=634891782]
 show_behind_parent = true
-position = Vector2(360, 248)
-scale = Vector2(0.3, 0.3)
+position = Vector2(575, 323.7)
+scale = Vector2(0.482412, 0.38645086)
 texture = ExtResource("9_7j0pg")
+metadata/_edit_lock_ = true
 
-[connection signal="pressed" from="Upgrade Button" to="Upgrade Button" method="_on_pressed"]
+[connection signal="pressed" from="Upgrade Button" to="." method="_on_upgrade_button_pressed"]
 [connection signal="pressed" from="Strawberry Counter/Strawberry Patch" to="Strawberry Counter/Strawberry Patch" method="_on_pressed"]
