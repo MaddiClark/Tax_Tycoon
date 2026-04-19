@@ -2,8 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dw5j8tq2nhoep" path="res://Game/Tax Screen/sprite_2d.gd" id="1_gf2in"]
 [ext_resource type="Script" uid="uid://cjh47r54omb4p" path="res://Game/Tax Screen/area_2d.gd" id="2_fgkgf"]
+[ext_resource type="Script" uid="uid://cnrwubsigihpk" path="res://Game/Tax Screen/w_2_name.gd" id="3_i82my"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i82my"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqvq5"]
 
 [node name="Taxes" type="Node2D" unique_id=1097440002]
 
@@ -17,5 +20,15 @@ script = ExtResource("2_fgkgf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Total Income/Total Income" unique_id=513945283]
 shape = SubResource("RectangleShape2D_i82my")
+
+[node name="Employer Name" type="Node2D" parent="." unique_id=1592539936]
+
+[node name="W2 Name" type="Sprite2D" parent="Employer Name" unique_id=1609469914]
+script = ExtResource("3_i82my")
+
+[node name="Tax Form Employer Name" type="Area2D" parent="Employer Name" unique_id=473178228]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Employer Name/Tax Form Employer Name" unique_id=1011852726]
+shape = SubResource("RectangleShape2D_oqvq5")
 
 [connection signal="area_entered" from="Total Income/Total Income" to="Total Income/W2 Total Income" method="_on_area_2d_area_entered"]

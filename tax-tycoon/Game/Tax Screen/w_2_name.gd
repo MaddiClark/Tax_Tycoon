@@ -28,5 +28,5 @@ func _input(event):
 
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area.name == "Total Income":
+	if area.name == "Tax Form Employer Name":
 		can_drag = false
