@@ -1,3 +1,71 @@
 [gd_scene format=3 uid="uid://bwvf3n18fgseg"]
 
+[ext_resource type="Texture2D" uid="uid://c7f8jjmlyy6wq" path="res://Interface/Taxes/Taxdesk.png" id="1_c7xrh"]
+[ext_resource type="Texture2D" uid="uid://gy8xe67sk0rc" path="res://Interface/Taxes/W2.png" id="2_8dfps"]
+[ext_resource type="Texture2D" uid="uid://bnfre00mcauxt" path="res://Interface/Taxes/IMG_3591.jpg" id="3_w8rkx"]
+[ext_resource type="Texture2D" uid="uid://ciu55eav1fuqn" path="res://Interface/Taxes/IMG_3592.jpg" id="4_cacpg"]
+[ext_resource type="Texture2D" uid="uid://e18me78ncckp" path="res://Interface/Pieces/Next.png" id="5_redat"]
+[ext_resource type="Texture2D" uid="uid://bphi3f7wla5d7" path="res://Interface/Taxes/Baby Jay.png" id="6_s2h7d"]
+[ext_resource type="Texture2D" uid="uid://bmecldo4r4lli" path="res://Interface/Taxes/Farmer.png" id="7_mnn0e"]
+[ext_resource type="Texture2D" uid="uid://cjsrmse6eps15" path="res://Interface/Taxes/Income.png" id="8_dwusn"]
+[ext_resource type="Texture2D" uid="uid://dky36jhxmsd23" path="res://Interface/Taxes/ssnblock.png" id="9_uksb1"]
+
 [node name="Taxes" type="Node2D" unique_id=1097440002]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=212720036]
+position = Vector2(576.2, 320.7)
+scale = Vector2(0.4805695, 0.39004797)
+texture = ExtResource("1_c7xrh")
+metadata/_edit_lock_ = true
+
+[node name="W2" type="TextureRect" parent="." unique_id=1922596416]
+offset_left = 100.0
+offset_top = 22.0
+offset_right = 2488.0
+offset_bottom = 1690.0
+scale = Vector2(0.4, 0.5)
+texture = ExtResource("2_8dfps")
+
+[node name="10-40 - 1" type="Sprite2D" parent="." unique_id=55820462]
+visible = false
+position = Vector2(683, 316.00003)
+scale = Vector2(0.32917455, 0.3)
+texture = ExtResource("3_w8rkx")
+
+[node name="10-40 - 2" type="TextureRect" parent="." unique_id=30638293]
+visible = false
+offset_left = 423.0
+offset_top = 4.0000005
+offset_right = 1733.0
+offset_bottom = 2060.6667
+scale = Vector2(0.4, 0.3)
+texture = ExtResource("4_cacpg")
+expand_mode = 1
+
+[node name="Arrow" type="TextureButton" parent="." unique_id=1862530469]
+offset_left = 870.0
+offset_top = 394.0
+offset_right = 3258.0
+offset_bottom = 2062.0
+scale = Vector2(0.2, 0.3)
+texture_normal = ExtResource("5_redat")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1929672387]
+position = Vector2(643, 377)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_s2h7d")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1155809817]
+position = Vector2(636, 230)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_mnn0e")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=400773790]
+position = Vector2(844, 149.00002)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("8_dwusn")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=1400882447]
+position = Vector2(668, 121)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_uksb1")

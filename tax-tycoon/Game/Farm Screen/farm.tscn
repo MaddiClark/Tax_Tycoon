@@ -4,14 +4,20 @@
 [ext_resource type="Script" uid="uid://d3n7v3n6i3i8t" path="res://Game/Farm Screen/upgrade_button.gd" id="2_vkr66"]
 [ext_resource type="Texture2D" uid="uid://boaawsmar3ywf" path="res://Game/Farm Screen/Main/Harvest_Clicker/Harvester.png.png" id="3_1m528"]
 [ext_resource type="Script" uid="uid://bqig6wqfedh8t" path="res://Game/Farm Screen/strawberry_patch.gd" id="4_1m528"]
-[ext_resource type="Script" uid="uid://6c85b3ythqex" path="res://Game/Farm Screen/bar_node.gd" id="5_ofv8v"]
+[ext_resource type="Texture2D" uid="uid://qocjqhqv2io" path="res://Interface/Pieces/Inventory block.png" id="5_5plpp"]
+[ext_resource type="Script" path="res://Game/Farm Screen/bar_node.gd" id="5_ofv8v"]
 [ext_resource type="Theme" uid="uid://d1ss7i4j7thrx" path="res://Interface/Tax_theme.tres" id="6_dn4uu"]
+[ext_resource type="Texture2D" uid="uid://lk4bwm4jv2wq" path="res://Interface/Strawberry/Strawberry.png" id="6_kmu4v"]
+[ext_resource type="Texture2D" uid="uid://dsintxn5yq7a4" path="res://Interface/Counter/Coin/Coin.png" id="7_hbnwr"]
 [ext_resource type="Texture2D" uid="uid://fnctfrph0uuk" path="res://Interface/Bar/Bar out.png" id="7_r7iww"]
+[ext_resource type="Texture2D" uid="uid://6g824f5f5p83" path="res://Interface/Counter/Coin/Debt.png" id="8_6nt1h"]
 [ext_resource type="Texture2D" uid="uid://b1dfbh8hf1765" path="res://Interface/Bar/Bar in.png" id="8_vea0p"]
 [ext_resource type="Texture2D" uid="uid://bmlwmj1re8wda" path="res://Game/Farm Screen/Main/Main.png" id="9_7j0pg"]
 [ext_resource type="FontFile" uid="uid://bilxlca2hdvtv" path="res://Interface/Theme/cute-egg-font/CuteEgg-lgRAw.otf" id="9_dn4uu"]
+[ext_resource type="Texture2D" uid="uid://dly7b7vf0lwp7" path="res://Interface/Pieces/Tax time.png" id="15_kmu4v"]
 
 [node name="Farm" type="Node2D" unique_id=232668658]
+scale = Vector2(1.6, 1.3000001)
 
 [node name="Upgrade Button" type="TextureButton" parent="." unique_id=1674159857]
 anchors_preset = 15
@@ -44,13 +50,85 @@ texture_normal = ExtResource("3_1m528")
 script = ExtResource("4_1m528")
 
 [node name="Count Label" type="Label" parent="Strawberry Counter/Strawberry Patch" unique_id=741097516]
+z_index = 3
 layout_mode = 0
-offset_left = 1156.4877
-offset_top = 777.94446
-offset_right = 1196.4877
-offset_bottom = 800.94446
+offset_left = 1581.8265
+offset_top = 421.02866
+offset_right = 1621.8265
+offset_bottom = 466.02866
 scale = Vector2(1.3945073, 1.3286412)
+theme_override_font_sizes/font_size = 32
 text = "0"
+
+[node name="Count Label2" type="Label" parent="Strawberry Counter/Strawberry Patch" unique_id=1831530692]
+z_index = 3
+layout_mode = 0
+offset_left = 1581.8265
+offset_top = 557.53326
+offset_right = 1621.8265
+offset_bottom = 602.53326
+scale = Vector2(1.3945073, 1.3286412)
+theme_override_font_sizes/font_size = 32
+text = "0"
+
+[node name="TextureRect" type="TextureRect" parent="Strawberry Counter" unique_id=501611669]
+offset_left = 414.20453
+offset_top = 267.94876
+offset_right = 2802.2046
+offset_bottom = 1935.9487
+scale = Vector2(0.1, 0.2)
+texture = ExtResource("5_5plpp")
+
+[node name="TextureRect2" type="TextureRect" parent="Strawberry Counter" unique_id=319005494]
+offset_left = 414.20453
+offset_top = 320.08545
+offset_right = 2802.2046
+offset_bottom = 1988.0854
+scale = Vector2(0.1, 0.2)
+texture = ExtResource("5_5plpp")
+
+[node name="TextureRect3" type="TextureRect" parent="Strawberry Counter" unique_id=1921617611]
+offset_left = 414.20453
+offset_top = 375.641
+offset_right = 2802.2046
+offset_bottom = 2043.641
+scale = Vector2(0.1, 0.2)
+texture = ExtResource("5_5plpp")
+
+[node name="TextureRect4" type="TextureRect" parent="Strawberry Counter" unique_id=237516977]
+offset_left = 519.88635
+offset_top = 388.46152
+offset_right = 583.88635
+offset_bottom = 452.46152
+scale = Vector2(0.5, 0.7)
+texture = ExtResource("6_kmu4v")
+
+[node name="TextureRect5" type="TextureRect" parent="Strawberry Counter" unique_id=604723287]
+offset_left = 517.6136
+offset_top = 435.47006
+offset_right = 847.1594
+offset_bottom = 888.4613
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("7_hbnwr")
+expand_mode = 1
+
+[node name="TextureRect6" type="TextureRect" parent="Strawberry Counter" unique_id=1472127544]
+offset_left = 509.6591
+offset_top = 491.0256
+offset_right = 992.6137
+offset_bottom = 961.111
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("8_6nt1h")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Strawberry Counter" unique_id=1755677973]
+z_index = 2
+offset_left = 499.4318
+offset_top = 504.7008
+offset_right = 539.43176
+offset_bottom = 527.7008
+theme_override_font_sizes/font_size = 13
+text = "100"
 
 [node name="Bar Node" type="Node2D" parent="." unique_id=591156564]
 position = Vector2(155, 13)
@@ -71,6 +149,7 @@ theme = ExtResource("6_dn4uu")
 [node name="Timer Progress" type="TextureProgressBar" parent="Bar Node/Bar" unique_id=1842407823]
 layout_mode = 2
 size_flags_horizontal = 10
+value = 75.0
 texture_under = ExtResource("7_r7iww")
 texture_progress = ExtResource("8_vea0p")
 
@@ -79,23 +158,26 @@ layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Bar Node/Bar/Count" unique_id=979938552]
 layout_mode = 0
-offset_left = -136.77777
-offset_top = 24.117645
-offset_right = -75.77777
-offset_bottom = 86.117645
+offset_left = -162.74998
+offset_top = 14.977375
+offset_right = -101.749985
+offset_bottom = 76.97738
 theme = ExtResource("6_dn4uu")
 
 [node name="Month Label" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=808407147]
 layout_mode = 2
 theme = ExtResource("6_dn4uu")
 theme_override_fonts/font = ExtResource("9_dn4uu")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 13
 text = "Month:"
 
 [node name="Month" type="Label" parent="Bar Node/Bar/Count/VBoxContainer" unique_id=1784837044]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 16
+text = "12"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Bar Node/Bar/Count" unique_id=1703715351]
 layout_mode = 1
@@ -116,6 +198,7 @@ text = "Year:"
 [node name="Year" type="Label" parent="Bar Node/Bar/Count/HBoxContainer" unique_id=1136844809]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
+text = "1"
 
 [node name="Timer60" type="Timer" parent="Bar Node" unique_id=999964223]
 
@@ -126,6 +209,15 @@ show_behind_parent = true
 position = Vector2(360, 248)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("9_7j0pg")
+metadata/_edit_lock_ = true
+
+[node name="Tax Time" type="TextureButton" parent="." unique_id=1316556003]
+offset_left = 1.2500029
+offset_top = 144.61537
+offset_right = 2389.25
+offset_bottom = 1812.6154
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("15_kmu4v")
 
 [connection signal="pressed" from="Upgrade Button" to="Upgrade Button" method="_on_pressed"]
 [connection signal="pressed" from="Strawberry Counter/Strawberry Patch" to="Strawberry Counter/Strawberry Patch" method="_on_pressed"]
