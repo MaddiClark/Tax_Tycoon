@@ -17,6 +17,8 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 [autoload]
 
 global="*uid://dfuvfbp1h6k"
+Timer60="*uid://djvmx8qm7dvue"
+Timer5="*uid://djvmx8qm7dvue"
 
 [gui]
 

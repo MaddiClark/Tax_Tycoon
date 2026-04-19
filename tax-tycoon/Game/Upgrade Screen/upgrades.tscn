@@ -1,36 +1,99 @@
 [gd_scene format=3 uid="uid://dkhbq22e5ax08"]
 
-[ext_resource type="Texture2D" uid="uid://cqa367qw04gx5" path="res://Interface/Bar/Time Bar/red-square.png" id="1_ek2r5"]
 [ext_resource type="Script" uid="uid://c3u5oy505fl8i" path="res://Game/Upgrade Screen/texture_button.gd" id="1_exmdf"]
-[ext_resource type="Script" uid="uid://kahb0ftah4qv" path="res://Game/Upgrade Screen/tractor_upgrade.gd" id="3_2hdfm"]
-[ext_resource type="Script" uid="uid://chc37pvylivvj" path="res://Game/Upgrade Screen/shovel_upgrade.gd" id="4_f7xec"]
-[ext_resource type="Script" uid="uid://cqo7uqda3xa24" path="res://Game/Upgrade Screen/sprinkler_upgrade.gd" id="5_dtp0k"]
+[ext_resource type="Texture2D" path="res://Interface/Upgrade PNGS/Return.png" id="1_o4g2c"]
+[ext_resource type="Texture2D" uid="uid://dxqns6st1w83q" path="res://Interface/Upgrade PNGS/Tractor.png" id="3_1pbqd"]
+[ext_resource type="Script" path="res://Game/Upgrade Screen/tractor_upgrade.gd" id="3_2hdfm"]
+[ext_resource type="Script" path="res://Game/Upgrade Screen/shovel_upgrade.gd" id="4_f7xec"]
+[ext_resource type="Script" path="res://Game/Upgrade Screen/sprinkler_upgrade.gd" id="5_dtp0k"]
+[ext_resource type="Texture2D" uid="uid://bwd0qrwv50fhs" path="res://Interface/Upgrade PNGS/pixil-frame-0.png" id="5_o0lo6"]
+[ext_resource type="Texture2D" path="res://Interface/Upgrade PNGS/Sprinkler.png" id="7_si1fm"]
+[ext_resource type="Texture2D" path="res://Interface/Upgrade PNGS/Upgrades.png" id="9_pblno"]
+[ext_resource type="FontFile" uid="uid://bilxlca2hdvtv" path="res://Interface/Theme/cute-egg-font/CuteEgg-lgRAw.otf" id="10_1pbqd"]
 
 [node name="Upgrades" type="Node2D" unique_id=1164804630]
 
 [node name="Farm Button" type="TextureButton" parent="." unique_id=1795533147]
-offset_left = 500.99997
-offset_top = 195.0
-offset_right = 2901.0
-offset_bottom = 2595.0
-scale = Vector2(0.074503325, 0.07278484)
-texture_normal = ExtResource("1_ek2r5")
+offset_left = 216.0
+offset_top = 355.0
+offset_right = 2616.0
+offset_bottom = 2755.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_o4g2c")
 script = ExtResource("1_exmdf")
 
 [node name="Tractor Upgrade" type="TextureButton" parent="." unique_id=1837898509]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 799.0
+offset_top = 103.00001
+offset_right = 897.0
+offset_bottom = 192.0
+scale = Vector2(2.1000001, 2.3)
+texture_normal = ExtResource("3_1pbqd")
+ignore_texture_size = true
 script = ExtResource("3_2hdfm")
 
 [node name="Shovel Upgrade" type="TextureButton" parent="." unique_id=885662778]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 165.0
+offset_top = 145.0
+offset_right = 306.0
+offset_bottom = 275.0
+scale = Vector2(1.7, 1.4)
+texture_normal = ExtResource("5_o0lo6")
+ignore_texture_size = true
 script = ExtResource("4_f7xec")
 
 [node name="Sprinkler Upgrade" type="TextureButton" parent="." unique_id=625434061]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 482.0
+offset_top = 120.0
+offset_right = 572.0
+offset_bottom = 202.0
+scale = Vector2(2.1000001, 2.2)
+texture_normal = ExtResource("7_si1fm")
+ignore_texture_size = true
 script = ExtResource("5_dtp0k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=647658857]
+z_index = -1
+position = Vector2(575.2, 324.00003)
+scale = Vector2(0.48140705, 0.38920864)
+texture = ExtResource("9_pblno")
+metadata/_edit_lock_ = true
+
+[node name="Shovel Label" type="Label" parent="." unique_id=1731552534]
+offset_left = 183.0
+offset_top = 114.0
+offset_right = 335.0
+offset_bottom = 360.0
+theme_override_colors/font_color = Color(0.53498465, 0.07495629, 0.11942414, 1)
+theme_override_fonts/font = ExtResource("10_1pbqd")
+theme_override_font_sizes/font_size = 40
+text = "Shovel
+
+Price: "
+
+[node name="Sprinkler Label" type="Label" parent="." unique_id=482096524]
+offset_left = 486.0
+offset_top = 117.0
+offset_right = 688.0
+offset_bottom = 363.0
+theme_override_colors/font_color = Color(0.53498465, 0.07495629, 0.11942414, 1)
+theme_override_fonts/font = ExtResource("10_1pbqd")
+theme_override_font_sizes/font_size = 40
+text = "Sprinkler
+
+Price: "
+
+[node name="Tractor Label" type="Label" parent="." unique_id=1076388589]
+offset_left = 835.0
+offset_top = 120.0
+offset_right = 1037.0
+offset_bottom = 366.0
+theme_override_colors/font_color = Color(0.53498465, 0.07495629, 0.11942414, 1)
+theme_override_fonts/font = ExtResource("10_1pbqd")
+theme_override_font_sizes/font_size = 40
+text = "Tractor
+
+Price: "
 
 [connection signal="pressed" from="Farm Button" to="Farm Button" method="_on_pressed"]
 [connection signal="pressed" from="Tractor Upgrade" to="Tractor Upgrade" method="_on_pressed"]
