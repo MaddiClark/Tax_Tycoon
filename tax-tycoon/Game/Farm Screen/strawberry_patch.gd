@@ -22,3 +22,4 @@ func _on_pressed() -> void:
 				upgrade_level = 8
 	global.count += upgrade_level
 	get_node("Count Label").text = str(global.count)
+	get_node("Count Label2").text = str(global.count)
