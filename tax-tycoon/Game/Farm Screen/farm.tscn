@@ -53,6 +53,18 @@ scale = Vector2(1.3945073, 1.3286412)
 text = "0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[node name="Timer60" type="Timer" parent="." unique_id=999964223]
+wait_time = 60.0
+one_shot = true
+autostart = true
+
+[node name="Timer5" type="Timer" parent="." unique_id=726239568]
+wait_time = 5.0
+autostart = true
+
+>>>>>>> parent of 3a5af0e (I keep breaking shit)
 [node name="Bar_Node" type="Node2D" parent="." unique_id=591156564]
 =======
 [node name="Bar Node" type="Node2D" parent="." unique_id=591156564]
@@ -100,7 +112,6 @@ text = "Month:"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("9_dn4uu")
 theme_override_font_sizes/font_size = 8
-text = "1"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Bar Node/Bar/Count" unique_id=1703715351]
 layout_mode = 1
@@ -132,5 +143,5 @@ position = Vector2(360, 248)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("9_7j0pg")
 
-[connection signal="pressed" from="Upgrade Button" to="." method="_on_upgrade_button_pressed"]
+[connection signal="pressed" from="Upgrade Button" to="Upgrade Button" method="_on_pressed"]
 [connection signal="pressed" from="Strawberry Counter/Strawberry Patch" to="Strawberry Counter/Strawberry Patch" method="_on_pressed"]

@@ -16,8 +16,12 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 
 [autoload]
 
+<<<<<<< HEAD
 Timer60="*uid://djvmx8qm7dvue"
 Timer5="*uid://djvmx8qm7dvue"
+=======
+global="*uid://dfuvfbp1h6k"
+>>>>>>> parent of 3a5af0e (I keep breaking shit)
 
 [gui]
 

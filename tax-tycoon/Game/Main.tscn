@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://djvmx8qm7dvue"]
 
-[ext_resource type="Script" uid="uid://4sknnrb0jtm7" path="res://Game/main.gd" id="1_rl4yr"]
+[ext_resource type="Script" uid="uid://ducgey13baxs3" path="res://Game/main.gd" id="1_rl4yr"]
 [ext_resource type="PackedScene" uid="uid://dpdwuj2d8mptu" path="res://Game/Title Screen/title.tscn" id="2_g5pn2"]
 [ext_resource type="PackedScene" uid="uid://dm7qxdre2dc3d" path="res://Game/Farm Screen/farm.tscn" id="3_haytw"]
 [ext_resource type="PackedScene" uid="uid://dkhbq22e5ax08" path="res://Game/Upgrade Screen/upgrades.tscn" id="4_3xx61"]
@@ -20,9 +20,12 @@ script = ExtResource("1_rl4yr")
 [node name="Taxes" parent="World" unique_id=1097440002 instance=ExtResource("5_q34ae")]
 
 [node name="GUI" type="Node2D" parent="." unique_id=445567231]
+<<<<<<< HEAD
 
 [node name="Timer60" type="Timer" parent="." unique_id=1108962098]
 wait_time = 60.0
 
 [node name="Timer5" type="Timer" parent="." unique_id=2062611383]
 wait_time = 5.0
+=======
+>>>>>>> parent of 3a5af0e (I keep breaking shit)
