@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dpdwuj2d8mptu"]
+
+[node name="Title" type="Node2D" unique_id=824176691]
+
+[node name="Start Game" type="TextureButton" parent="." unique_id=88099328]
+offset_right = 40.0
+offset_bottom = 40.0
